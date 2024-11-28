@@ -1,0 +1,31 @@
+@import url("Styles/header.css");
+@import url("Styles/banner.css");
+@import url("Styles/main.css");
+@import url("Styles/topicos.css");
+@import url("Styles/contatos.css");
+@import url("Styles/footer.css");
+
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --cor-primaria: #002F52;
+    --cor-secundaria: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --branco: #ffff;
+    --cinza: #474646;
+    --cinza-claro: #858585;
+    --fonte-padrao: "Poppins", sans-serif;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+}
+
+body {
+    background: var(--cor-de-fundo);
+    font-family: var(--fonte-padrao);
+    height: 100vh;
+}

@@ -1,0 +1,89 @@
+/*Configurações gerais do container de contato*/
+.container-contato {
+    padding: 1.5em;
+}
+
+/*Estilização e configurações dos itens do container de contato*/
+.contato__titulo,
+.contato__texto {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.contato__titulo {
+    font-size: 1.12em;
+    font-weight: 600;
+}
+
+.contato__texto {
+    font-weight: 300;
+    margin: 1em 0;
+}
+
+.contato__email {
+    color: #002f52;
+    outline: none;
+    border: 1px solid #002f52;
+    border-radius: 24px;
+    max-width: 500px;
+    width: 100%;
+    padding: 1em 2em;
+}
+
+.contato__email::placeholder {
+    background: url(../Assets/Icons/Email.svg) no-repeat;
+    color: #002f52;
+    padding-left: 30px;
+}
+
+/*Redimensionamento para telas de até 1024px*/
+@media screen and (min-width: 1024px) {
+
+    /*Redimensionamento dos itens do container de contato*/
+    .container-contato {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 8em;
+    }
+
+    .contato__titulo {
+        font-size: 1.4em;
+        font-weight: 500;
+        width: 65%;
+    }
+
+    .contato__texto {
+        font-size: 1.1em;
+        width: 90%;
+    }
+
+    .contato__email {
+        width: 330px;
+    }
+}
+
+/*Redimensionamento para telas de até 1728px*/
+@media screen and (min-width: 1728px) {
+
+    /*Ajustes gerais do container de contato*/
+    .container-contato {
+        padding: 4em 0;
+    }
+
+    .container-contato__texto {
+        width: 25%;
+    }
+
+    .contato__titulo {
+        width: 100%;
+    }
+
+    .contato__texto {
+        width: 100%;
+    }
+
+}

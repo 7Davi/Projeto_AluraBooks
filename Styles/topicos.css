@@ -1,0 +1,84 @@
+/*Continer geral do tópico/contatos*/
+.section-wrapper {
+    background: var(--branco);
+    padding-top: 1.2em;
+}
+
+/*Configurações gerais do container tópicos*/
+.container-topicos {
+    background: var(--azul-degrade);
+    padding: 1.5em 0;
+}
+
+.container-topicos .topicos__titulo {
+    color: var(--branco);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 2em;
+}
+
+.container-topicos .topicos__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.topicos__lista .topicos__lista-item {
+    background: var(--cor-secundaria);
+}
+
+.topicos__lista-item .topicos__lista-link {
+    color: var(--branco);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    padding: 1em 1.7em;
+    transition: all .5s;
+}
+
+.topicos__lista-item .topicos__lista-link:hover {
+    background: #cf8a00;
+    transition: all .5s;
+}
+
+/*Redimensionamento para telas de até 1024px*/
+@media screen and (min-width: 1024px) {
+
+    /*Ajustes do container geral (tópicos/contatos)*/
+    .section-wrapper {
+        padding: 0;
+    }
+
+    /*Redimensionamento dos itens do container tópico*/
+    .container-topicos .topicos__titulo {
+        font-size: 1.2em;
+    }
+
+    .container-topicos .topicos__lista {
+        padding: 0 10em;
+    }
+
+    .topicos__lista-item .topicos__lista-link {
+        font-size: 1.05em;
+        padding: 1em 1.5em;
+    }
+}
+
+/*Redimensionamento e ajustes para telas de no mínimo 1728px*/
+@media screen and (min-width: 1728px) {
+    .container-topicos {
+        padding: 2em;
+    }
+
+    .container-topicos .topicos__titulo {
+        margin-bottom: 1em;
+    }
+
+    .container-topicos .topicos__lista {
+        padding: 0 30em;
+    }
+}
