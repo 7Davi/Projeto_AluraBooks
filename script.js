@@ -28,6 +28,19 @@ const swiper = new Swiper('.swiper', {
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+                centeredSlides: false,
+                centeredSlidesBounds: false,
+            },
+        },
+        // when window width is >= 1500px
+        1500: {
+            slidesPerView: 4,
+            spaceBetween: 60,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                centeredSlides: false,
+                centeredSlidesBounds: false,
             },
         },
         // when window width is >= 1728px
