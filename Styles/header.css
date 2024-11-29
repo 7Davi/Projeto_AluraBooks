@@ -150,6 +150,7 @@
     }
 
     .opcoes-menu .opcoes__menu-item:first-child {
+        display: inline-block;
         padding: .5em 1em;
         cursor: pointer;
     }
